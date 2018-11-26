@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "name",
+      "description": "blabla",
+      "technologies": ["array", "of", "strings"],
+      "live_link": "A link to a live project hosted on github",
+      "github_link": "link to repo",
+      "image_urls": ["main", "1", "2", "3"]
+    },
+    {
+      "id": 1,
+      "project_name": "name",
+      "description": "blabla",
+      "technologies": ["array", "of", "strings"],
+      "live_link": "A link to a live project hosted on github",
+      "github_link": "link to repo",
+      "image_urls": ["main", "1", "2", "3"]
+    },
+    {
+      "id": 2,
+      "project_name": "name",
+      "description": "blabla",
+      "technologies": ["array", "of", "strings"],
+      "live_link": "A link to a live project hosted on github",
+      "github_link": "link to repo",
+      "image_urls": ["main", "1", "2", "3"]
+    },
+    {
+      "id": 3,
+      "project_name": "name",
+      "description": "blabla",
+      "technologies": ["array", "of", "strings"],
+      "live_link": "A link to a live project hosted on github",
+      "github_link": "link to repo",
+      "image_urls": ["main", "1", "2", "3"]
+    },
+    {
+      "id": 4,
+      "project_name": "name",
+      "description": "blabla",
+      "technologies": ["array", "of", "strings"],
+      "live_link": "A link to a live project hosted on github",
+      "github_link": "link to repo",
+      "image_urls": ["main", "1", "2", "3"]
+    }
+  ]
+}
