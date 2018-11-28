@@ -2,48 +2,48 @@
   "projects": [
     {
       "id": 0,
-      "project_name": "name",
-      "description": "blabla",
-      "technologies": ["array", "of", "strings"],
-      "live_link": "A link to a live project hosted on github",
-      "github_link": "link to repo",
-      "image_urls": ["main", "1", "2", "3"]
+      "project_name": "Random quote generator",
+      "description": "A project to learn everything about JavaScripts: Objects, Array and loops by creating a random quote generator. <br> And thus the basics of JavaScript.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "live_link": "https://jeffrey-meesters.github.io/treehouse-project1-random-quote-generator/",
+      "github_link": "https://github.com/Jeffrey-Meesters/treehouse-project1-random-quote-generator",
+      "image_urls": ["/static/img/project1_1.png", "/static/img/project1_2.png", "/static/img/project1_3.png", "/static/img/project1_4.png"]
     },
     {
       "id": 1,
-      "project_name": "name",
-      "description": "blabla",
-      "technologies": ["array", "of", "strings"],
-      "live_link": "A link to a live project hosted on github",
-      "github_link": "link to repo",
-      "image_urls": ["main", "1", "2", "3"]
+      "project_name": "List pagination and filtering",
+      "description": "A project to learn ES2015, manipulating the DOM, Debugging and a bit of CSS",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "live_link": "https://jeffrey-meesters.github.io/treehouse-project2-listpagination-filtering/index",
+      "github_link": "https://github.com/Jeffrey-Meesters/treehouse-project2-listpagination-filtering",
+      "image_urls": ["/static/img/project2_1.png", "/static/img/project2_2.png", "/static/img/project2_3"]
     },
     {
       "id": 2,
-      "project_name": "name",
-      "description": "blabla",
-      "technologies": ["array", "of", "strings"],
-      "live_link": "A link to a live project hosted on github",
-      "github_link": "link to repo",
-      "image_urls": ["main", "1", "2", "3"]
+      "project_name": "Interactive form",
+      "description": "Learn JQuery and a dive into JavaScript conditionals to set up an interactive form",
+      "technologies": ["JQuery", "JavaScript", "HTML", "CSS"],
+      "live_link": "https://jeffrey-meesters.github.io/treehouse-project3-interactive-form/",
+      "github_link": "https://github.com/Jeffrey-Meesters/treehouse-project3-interactive-form",
+      "image_urls": ["/static/img/project3_1.png", "/static/img/project3_2.png", "/static/img/project3_3.png", "/static/img/project3_4.png"]
     },
     {
       "id": 3,
-      "project_name": "name",
-      "description": "blabla",
-      "technologies": ["array", "of", "strings"],
-      "live_link": "A link to a live project hosted on github",
-      "github_link": "link to repo",
-      "image_urls": ["main", "1", "2", "3"]
+      "project_name": "Object Orientated Phrase Hunter",
+      "description": "A project to learn Object Oriented Programming with JavaScript ES2015. <br> While also learning about Callbacks and other iterations methods.",
+      "technologies": ["JavaScripts", "HTML", "CSS"],
+      "live_link": "https://jeffrey-meesters.github.io/Treehouse-OOP-Game-Phrase-hunter/",
+      "github_link": "https://github.com/Jeffrey-Meesters/Treehouse-OOP-Game-Phrase-hunter",
+      "image_urls": ["/static/img/project4_1.png", "/static/img/project4_2.png", "/static/img/project4_3.png", "/static/img/project4_4.png", "/static/img/project4_5.png"]
     },
     {
       "id": 4,
-      "project_name": "name",
-      "description": "blabla",
-      "technologies": ["array", "of", "strings"],
-      "live_link": "A link to a live project hosted on github",
-      "github_link": "link to repo",
-      "image_urls": ["main", "1", "2", "3"]
+      "project_name": "API Requests",
+      "description": "A project to learn about HTTP, XMLHttpRequest, AJAX, Fetch API, URI's and all that comes with it!",
+      "technologies": ["HTTP", "AJAX", "XHR", "Fetch API", "CSS", "JQuery"],
+      "live_link": "https://jeffrey-meesters.github.io/static-API-Requests_TreeHouse_Project-5/",
+      "github_link": "https://github.com/Jeffrey-Meesters/static-API-Requests_TreeHouse_Project-5",
+      "image_urls": ["/static/img/project5_1.gif", "/static/img/project5_2.png", "/static/img/project5_3.png", "/static/img/project5_4.png", "/static/img/project5_5.png"]
     }
   ]
 }
