@@ -31,8 +31,19 @@ app.get('/about', (req, res) => {
 //The project route + an id to get the correct project
 app.get('/project/:id', (req, res) => {
     const proId = req.params.id;
-    const currProject = projects.projects[proId];
-    res.render('project', currProject);
+    let currProject;
+
+    for (let i = 0; i < projects.projects.length; i ++ ) {
+        if (projects.projects[i].id === Number(proId)) {
+            currProject = projects.projects[i];
+        }
+    }
+
+    if (currProject) {
+        res.render('project', currProject);
+    } else {
+        res.send('BUILD YOUR ERROR PAGE!!');
+    }
 });
 
 // POST
