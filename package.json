@@ -4,12 +4,14 @@
   "description": "A portfolio website",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jeffrey Meesters",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "open": "0.0.5",
     "pug": "^2.0.3"
   }
 }

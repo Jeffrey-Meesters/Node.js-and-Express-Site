@@ -1,5 +1,8 @@
 const express = require('express');
-const { projects } = require("./data.json");
+// https://www.npmjs.com/package/open
+// https://www.npmjs.com/advisories/663
+const open = require('open');
+const projects  = require("./data.json");
 
 // initialize express and declare it on app
 const app = express();
@@ -17,15 +20,20 @@ app.set('view engine', 'pug');
 // GET
 // the root/index route of our app
 app.get('/', (req, res) => {
-    console.log(projects);
-    res.send(projects);
+    res.render('index', projects);
 });
 
 // The about route of our app
-app.get('/about', (req, res) => {});
+app.get('/about', (req, res) => {
+    res.render('about');
+});
 
 //The project route + an id to get the correct project
-app.get('/project/:id', (req, res) => {});
+app.get('/project/:id', (req, res) => {
+    const proId = req.params.id;
+    const currProject = projects.projects[proId];
+    res.render('project', currProject);
+});
 
 // POST
 // .. nothing here yet ..
@@ -33,5 +41,8 @@ app.get('/project/:id', (req, res) => {});
 
 // let the app listen on port 3000 and serve on localhost
 app.listen(port, () => {
-    console.log(`http://${host}:${port}/`);
+    console.log(`app is running on: http://${host}:${port}/`);
+    console.log(`press (mac) cmd + click on the url to open the browser...`);
+    console.log("... ow wait!! I'm opening!!!");
+    open(`http://${host}:${port}/`);
 });
