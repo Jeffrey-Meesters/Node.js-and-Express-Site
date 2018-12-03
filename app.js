@@ -42,13 +42,25 @@ app.get('/project/:id', (req, res) => {
     if (currProject) {
         res.render('project', currProject);
     } else {
-        res.send('BUILD YOUR ERROR PAGE!!');
+        const message = `Project with id ${proId} does not exist. Please use the back button.`;
+        res.render('error_page', { message });
     }
 });
 
-// POST
-// .. nothing here yet ..
+app.use((req, res, next) => {
+   const error = new Error("page not found");
+   error.status = 404;
+   next(error);
+});
 // End routes
+
+// Error handler middleware
+app.use((error, req, res, next) => {
+    console.log(error);
+    res.locals.message = error;
+    res.status(error.status);
+    res.render('error_page');
+});
 
 // let the app listen on port 3000 and serve on localhost
 app.listen(port, () => {
@@ -56,4 +68,6 @@ app.listen(port, () => {
     console.log(`press (mac) cmd + click on the url to open the browser...`);
     console.log("... ow wait!! I'm opening!!!");
     open(`http://${host}:${port}/`);
+    console.log(' ');
+    console.log('ps. you might be sorry if you use nodemon now! Every change will open a new window :)')
 });

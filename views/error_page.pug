@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+    nav.grid-container.portfolio-breadcrumb
+        a(href='/') ← Back
+
+    if message && !message.status
+        .error-message= 'Oh oh, ' + message
+    else if message.status
+            .error-status= 'Oh, oh an ' + message.status + ' status code!'
+            .error-message= 'That means: ' + message.message + '!'
+    else
+        .error-message Something went wrong please use the back button.
