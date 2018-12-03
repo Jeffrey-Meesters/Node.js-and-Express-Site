@@ -1,11 +1,18 @@
+//- load the layout
 extends layout.pug
 
+//- set the content
 block content
+    //- I took the back button so users can go back on the page
     nav.grid-container.portfolio-breadcrumb
         a(href='/') ← Back
 
+    //- if there is a message but not a status render the message
+    //- this will happen when the user changes the id on the project page to a non existing value
     if message && !message.status
         .error-message= 'Oh oh, ' + message
+    //- else if there is a message status and a message in the message show this error
+    //- this will most likely happen when the user enters a non existing route
     else if message.status
             .error-status= 'Oh, oh an ' + message.status + ' status code!'
             .error-message= 'That means: ' + message.message + '!'
