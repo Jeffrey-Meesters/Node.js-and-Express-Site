@@ -23,8 +23,8 @@
       "project_name": "API Requests",
       "description": "A project to learn about HTTP, XMLHttpRequest, AJAX, Fetch API, URI's and all that comes with it!",
       "technologies": ["HTTP", "AJAX", "XHR", "Fetch API", "CSS", "JQuery"],
-      "live_link": "https://jeffrey-meesters.github.io/static-API-Requests_TreeHouse_Project-5/",
-      "github_link": "https://github.com/Jeffrey-Meesters/static-API-Requests_TreeHouse_Project-5",
+      "live_link": "https://jeffrey-meesters.github.io/Public-API-Requests_TreeHouse_Project-5/",
+      "github_link": "https://github.com/Jeffrey-Meesters/Public-API-Requests_TreeHouse_Project-5",
       "image_urls": ["/static/img/project5_1.gif", "/static/img/project5_2.png", "/static/img/project5_3.png", "/static/img/project5_4.png", "/static/img/project5_5.png"]
     },
     {

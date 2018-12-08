@@ -3,24 +3,24 @@ h1,h2,h3,h4,h5,p{
   font-family: 'Merriweather', serif;
 }
 
-  h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
-  }
+h5{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 2.5px;
+  -webkit-text-transform: uppercase;
+  text-transform: uppercase;
+}
 
-  h6{
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
+h6{
+  letter-spacing: 2.5px;
+  -webkit-text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
-  p{
-    font-size: 15px;
-    color: #666;
-  }
+p{
+  font-size: 15px;
+  color: #666;
+}
 
 .round{
   border-radius: 5px;
@@ -29,13 +29,20 @@ h1,h2,h3,h4,h5,p{
 .text-light{
   color: #666;
 }
-
+/*
+I got the styling from the github website
+I liked to do that because they're always redirecting to github
+*/
 .button{
-  background-color: #333;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+  color: #fff;
+  border-radius: 5px;
 }
 
 .button:hover{
-  background-color: #111;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg,#28a745,#34d058 90%);
 }
 
 a{
@@ -58,44 +65,44 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #374c6e;
   color: #fff;
   box-shadow: none !important;
 }
 
-  .portfolio-me p{
-    font-size: 14px;
-    color: #999;
-  }
+.portfolio-me p{
+  font-size: 14px;
+  color: #fff;
+}
 
-  .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    color: #555;
-    font-size: 13px;
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
-  }
+.portfolio-me a{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #eee;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  -webkit-text-transform: uppercase;
+  text-transform: uppercase;
+}
 
-  .portfolio-me a:hover{
-    color: #999;
-  }
+.portfolio-me a:hover{
+  color: #999;
+}
 
 .portfolio-breadcrumb{
   margin: 0;
-  padding: 20px;
+  padding: 5px 20px;
   border-bottom: 1px solid #eaeaea;
 }
 
- .portfolio-breadcrumb a{
-   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   font-weight: 600;
-   font-size: 13px;
-   letter-spacing: 2.5px;
+.portfolio-breadcrumb a{
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 16px;
+  letter-spacing: 5.5px;
    -webkit-text-transform: uppercase;
    text-transform: uppercase;
- }
+}
 
 .portfolio-intro{
   margin: 0;
@@ -104,7 +111,7 @@ a:hover{
 
 .portfolio-intro p{
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
 }
 
 .portfolio-index{
@@ -112,31 +119,31 @@ a:hover{
   padding: 10px 50px;
 }
 
-  .portfolio-index .thumbnail{
-    height: 200px;
-    margin-bottom: 5px;
-  }
+.portfolio-index .thumbnail{
+  height: 200px;
+  margin-bottom: 5px;
+}
 
-  .portfolio-index a{
-    color: #222;
-  }
+.portfolio-index a{
+  color: #222;
+}
 
-  .portfolio-index .cell{
-    max-height: 250px;
-    margin-bottom: 15px;
-  }
+.portfolio-index .cell{
+  max-height: 250px;
+  margin-bottom: 15px;
+}
 
-    .portfolio-index .cell h5{
-      letter-spacing: 1px;
-    }
+.portfolio-index .cell h5{
+  letter-spacing: 1px;
+}
 
 .portfolio-meta{
   padding-left: 20px;
 }
 
-  .portfolio-meta .button{
-    margin-bottom: 5px;
-  }
+.portfolio-meta .button{
+  margin-bottom: 5px;
+}
 
 .portfolio-project p{
   border: none;
@@ -149,4 +156,45 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+/*added css*/
+
+/*lay-out*/
+.title-bar {
+  background: #374c6e;
+  color: #fff;
+}
+
+/*error page*/
+.error-messages-wrapper {
+  text-align: center;
+  line-height: 35px;
+}
+
+.error-status {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.error-message {
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+/*about page*/
+.quote-text {
+  font-size: 12px;
+  font-family: monospace;
+  color: #aaa;
+  position: relative;
+  top: -15px;
+  opacity: 1;
+  transition: all 0.6s;
+}
+
+.quote-text:hover {
+  opacity: 0;
 }

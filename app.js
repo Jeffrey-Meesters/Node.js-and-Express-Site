@@ -55,8 +55,9 @@ app.get('/project/:id', (req, res) => {
         res.render('project', currProject);
     } else {
         // else render the error page and give it an message
+        console.log(`this project id does not exist: ${proId}`);
         const message = `Project with id ${proId} does not exist. Please use the back button.`;
-        res.render('error_page', { message });
+        res.render('error', { message });
     }
 });
 
@@ -84,7 +85,8 @@ app.use((error, req, res, next) => {
     // create an error status
     res.status(error.status);
     // render the error page
-    res.render('error_page');
+    console.log(`There was an error > status: ${error.status} > ${error} > ${error.stack}`);
+    res.render('error');
 });
 
 // let the app listen on port 3000 and serve on localhost
